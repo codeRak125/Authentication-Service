@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const initializeDB = async function() { 
-    await mongoose.connect("mongodb://localhost/auth_service", {
+    await mongoose.connect("mongodb://mongo_db:27017", {
         useNewUrlParser: true,
         useUnifiedTopology: true,
     })
